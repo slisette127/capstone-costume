@@ -12,6 +12,16 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import { createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+      palette: {
+        primary: '#009688',
+        secondary: '#ffc400'
+      }
+  }
+});
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
@@ -55,7 +65,7 @@ export default function MenuAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
+            cost-u-me
           </Typography>
           {auth && (
             <div>
