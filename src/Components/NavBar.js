@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { createTheme } from '@mui/material/styles';
 
+
 const theme = createTheme({
   palette: {
       palette: {
@@ -22,7 +23,6 @@ const theme = createTheme({
       }
   }
 });
-
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
