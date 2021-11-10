@@ -41,14 +41,26 @@ export default function LogIn(props) {
                 }} >
 
                 <h1>Log In </h1>
-               <div style={{margin:"30px",
-                            padding: "10px"
+               <div style={{margin:"20px",
+                            padding: "10px",
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center"
                             }}>
                    <form onSubmit={handleLogIn} >
                     <TextField required fullWidth name="userName" onChange={handleInput} label="Username" variant="standard" />
 
                     <TextField required fullWidth label="Password" variant="standard" />
-                        <Button variant="contained">Contained</Button>
+                        <Button variant="contained"
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            margin: "50px",
+                            width: "100px"
+                            
+                        }}>Log In</Button>
                    </form>
                 </div> 
             </Paper>
